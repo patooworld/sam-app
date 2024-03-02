@@ -19,3 +19,17 @@ Please enter the artifact bucket ARN for your Lambda function. If you do not ...
 Does your application contain any IMAGE type Lambda functions? [y/N]: N
 Press enter to confirm the values above ... : return/enter
 Should we proceed with the creation? [y/N]: y
+test:
+  if: github.event_name == 'push'
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v3
+    - run: |
+        # trigger the tests here
+        echo 'Running unit tests'
+        cd hello-world
+        npm install
+        npm run test
+cd ~/environment/sam-app
+git commit -am 'Enable unit tests in pipeline'
+git push
