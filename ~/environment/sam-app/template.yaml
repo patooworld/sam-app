@@ -1,0 +1,11 @@
+Runtime: nodejs16.x
+AutoPublishAlias: live
+DeploymentPreference:
+  Type: Canary10Percent5Minutes
+Architectures:
+  - x86_64
+cd ~/environment/sam-app
+sam validate --lint
+git add .
+git commit -m "Add Canary deployment configuration to SAM"
+git push
