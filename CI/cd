@@ -1,0 +1,19 @@
+sam-app
+  .github/workflows
+  pipeline.yaml         # (new) GitHub Action Workflow
+  events
+  hello-world/            # SAM application root
+  README.md
+  samconfig.toml          # Config file for manual SAM deployments
+ template.yaml           # SAM template
+git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .github/workflows/pipeline.yaml
+        cd ~/environment/sam-app
+git add .
+git commit -m "Adding SAM CI/CD Pipeline definition"
+git push
