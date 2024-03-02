@@ -1,0 +1,10 @@
+cd ~/environment/sam-app
+sam pipeline init
+Select a pipeline template to get started: AWS Quick Start Pipeline Templates (1)
+Select CI/CD system: GitHub Actions (3)
+What is the git branch used for production deployments? [main]: return/enter
+What is the template file path? [template.yaml]: return/enter
+Select an index or enter the stage 1's configuration name (as provided during the bootstrapping): 1
+What is the sam application stack name for stage 1? [sam-app]: sam-app-dev
+Select an index or enter the stage 2's configuration name (as provided during the bootstrapping): 2
+What is the sam application stack name for stage 2? [sam-app]: sam-app-prod
