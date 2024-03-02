@@ -1,0 +1,21 @@
+cd ~/environment/sam-app
+sam pipeline bootstrap --stage dev
+Select a pipeline template to get started: AWS Quick Start Pipeline Templates (1)
+Select CI/CD system: GitHub Actions (3)
+Do you want to go through stage setup process now? [Y/n]:
+[1] Stage definition. Stage name: dev
+[2] Account details. Select a credential source to associate with this stage: default (named profile) (2)
+Enter the region in which you want these resources to be created: Your region of choice
+Select a user permissions provider: OpenID Connect (OIDC) (2)
+Select an OIDC provider: GitHub Actions (1)
+Enter the URL of the OIDC provider [https://token.actions.githubusercontent.com ]: return/enter
+Enter the OIDC client ID (sometimes called audience) [sts.amazonaws.com]: return/enter
+Enter the GitHub organization that the code repository belongs to. If there is no organization enter your username instead: Your GitHub username
+Enter GitHub repository name: sam-app
+Enter the name of the branch that deployments will occur from [main]: return/enter
+Enter the pipeline execution role ARN if you have previously ... []: return/enter
+Enter the CloudFormation execution role ARN if you have previously ... []: return/enter
+Please enter the artifact bucket ARN for your Lambda function. If you do not ... []: return/enter
+Does your application contain any IMAGE type Lambda functions? [y/N]: N
+Press enter to confirm the values above ... : return/enter
+Should we proceed with the creation? [y/N]: y
