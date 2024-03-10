@@ -1,0 +1,3 @@
+
+  import { precacheAndRoute } from 'workbox-precaching/precacheAndRoute';
+  precacheAndRoute([{"revision":"3380be0f3a5294b934267befd03c8482","url":"app/globals.css"},{"revision":"fda1e0dbf9612c05be66c8e2dd787255","url":"app/page.module.css"},{"revision":"c94f29a0333a693145ea83badf0492e1","url":"next.config.js"}]);
